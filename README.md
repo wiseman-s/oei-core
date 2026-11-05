@@ -11,7 +11,7 @@ engine for energy data. It maps heterogeneous CSV and JSON energy datasets into
 a shared schema, validates them, records full provenance, and exports harmonised
 results through a Python library, a CLI, and a REST API.
 
-- Status: `0.2.0` (beta)
+- Status: `0.2.2` (beta)
 - Licence: Apache-2.0
 - Python: 3.10+
 - Starting point: Kenya, local-first on Windows 11, zero-cost development
