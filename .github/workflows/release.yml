@@ -15,39 +15,39 @@ jobs:
     environment:
       name: pypi
       url: https://pypi.org/p/oei-core
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
+
       - name: Install build and licence tooling
         run: |
           python -m pip install --upgrade pip
           python -m pip install build pip-licenses
           python -m pip install -e "."
+
       - name: Generate THIRD_PARTY_NOTICES.md
         run: |
-          {
-            echo "# Third-Party Notices"
-            echo ""
-            echo "Generated automatically at release time."
-            echo ""
-            echo "## Python dependencies"
-            echo ""
-            pip-licenses \
-              --format markdown \
-              --with-urls \
-              --with-license-file
-              --no-license-path \
-              --order name
-          } > THIRD_PARTY_NOTICES.md
+          echo "# Third-Party Notices" > THIRD_PARTY_NOTICES.md
+          echo "" >> THIRD_PARTY_NOTICES.md
+          echo "Generated automatically at release time by pip-licenses." >> THIRD_PARTY_NOTICES.md
+          echo "" >> THIRD_PARTY_NOTICES.md
+          echo "## Python dependencies" >> THIRD_PARTY_NOTICES.md
+          echo "" >> THIRD_PARTY_NOTICES.md
+          pip-licenses --format markdown --with-urls --order name >> THIRD_PARTY_NOTICES.md
+
       - name: Build distributions
         run: python -m build
+
       - name: Verify distributions
         run: |
           python -m pip install twine
           twine check dist/*
+
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
