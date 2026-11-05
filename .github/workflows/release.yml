@@ -38,6 +38,7 @@ jobs:
             pip-licenses \
               --format markdown \
               --with-urls \
+              --with-license-file
               --no-license-path \
               --order name
           } > THIRD_PARTY_NOTICES.md

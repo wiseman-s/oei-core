@@ -4,6 +4,16 @@
 
 ### Added
 
+## [0.2.1] - 2026-11-05
+
+### Fixed
+
+- Release workflow: added `--with-license-file` to `pip-licenses` so `--no-license-path` is accepted. The `v0.2.0` release failed at the `Generate THIRD_PARTY_NOTICES.md` step before building any artifacts.
+
+## [0.2.0]
+
+### Added
+
 - `Dockerfile`, `docker-compose.yml`, `.dockerignore` — production container image (multi-stage, non-root, healthcheck) and CI smoke test.
 - `oei.provenance.SqliteStore` — persistent provenance store with SQLite backend.
 - `oei harmonise --record` — persist provenance and quality report.
