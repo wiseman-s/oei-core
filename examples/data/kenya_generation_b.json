@@ -1,0 +1,7 @@
+{
+  "records": [
+    {"timestamp": "2024-01-01T00:00:00Z", "station": "Olkaria I", "source": "Geothermal", "cap": 45.0, "energy": 320.5},
+    {"timestamp": "2024-01-01T00:00:00Z", "station": "Olkaria II", "source": "Geothermal", "cap": 105.0, "energy": 810.2},
+    {"timestamp": "2024-01-01T00:00:00Z", "station": "Turkana Wind", "source": "Wind", "cap": 310.0, "energy": 1240.0}
+  ]
+}

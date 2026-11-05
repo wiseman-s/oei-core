@@ -1,0 +1,7 @@
+year,plant,technology,installed_capacity_mw,annual_generation_gwh
+2022,Olkaria I,Geothermal,45.0,2750.0
+2022,Olkaria II,Geothermal,105.0,6800.0
+2022,Turkana Wind,Wind,310.0,9800.0
+2023,Olkaria I,Geothermal,45.0,2800.0
+2023,Olkaria II,Geothermal,105.0,6900.0
+2023,Turkana Wind,Wind,310.0,10200.0

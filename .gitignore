@@ -23,7 +23,7 @@ htmlcov/
 .coverage.*
 coverage.xml
 exports/
-data/
+/data/
 *.log
 *.sqlite
 *.sqlite3

@@ -1,0 +1,4 @@
+date,plant,technology,capacity_mw,generation_mwh
+2024-01-01,Olkaria I,Geothermal,45.0,320.5
+2024-01-01,Olkaria II,Geothermal,105.0,810.2
+2024-01-01,Turkana Wind,Wind,310.0,1240.0

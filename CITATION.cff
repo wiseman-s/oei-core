@@ -8,7 +8,7 @@ authors:
     alias: wiseman-s
     email: alphageek254@gmail.com
     website: "https://github.com/wiseman-s"
-version: "0.2.1"
+version: "0.2.2"
 date-released: "2026-11-05"
 license: "Apache-2.0"
 repository-code: "https://github.com/wiseman-s/oei-core"

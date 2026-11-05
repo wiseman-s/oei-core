@@ -4,6 +4,12 @@
 
 ### Added
 
+## [0.2.2] - 2026-11-05
+
+### Fixed
+
+- Release workflow: simplified `pip-licenses` invocation to avoid shell escaping issues. Removed `--with-license-file` and `--no-license-path`.
+
 ## [0.2.1] - 2026-11-05
 
 ### Fixed
