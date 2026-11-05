@@ -1,0 +1,36 @@
+source_name: kenya_generation_a
+source_licence: CC-BY-4.0
+source_uri: https://example.org/kenya_generation_a.csv
+timestamp_column: date
+schema_fields:
+  - name: timestamp
+    type: timestamp
+    required: true
+  - name: plant_name
+    type: string
+    required: true
+  - name: technology
+    type: categorical
+    required: true
+    allowed_values: [Geothermal, Wind, Hydro, Solar, Thermal]
+  - name: capacity_mw
+    type: float
+    unit: MW
+    required: true
+    minimum: 0
+  - name: generation_mwh
+    type: float
+    unit: MWh
+    required: true
+    minimum: 0
+mappings:
+  - source: date
+    target: timestamp
+  - source: plant
+    target: plant_name
+  - source: technology
+    target: technology
+  - source: capacity_mw
+    target: capacity_mw
+  - source: generation_mwh
+    target: generation_mwh

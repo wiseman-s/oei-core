@@ -1,0 +1,40 @@
+source_name: kenya_year_summary
+source_licence: CC-BY-4.0
+source_uri: https://example.org/kenya_year_summary.csv
+timestamp_column: year
+default_unit: MWh
+schema_fields:
+  - name: timestamp
+    type: timestamp
+    required: true
+  - name: plant_name
+    type: string
+    required: true
+  - name: technology
+    type: categorical
+    required: true
+    allowed_values: [Geothermal, Wind, Hydro, Solar, Thermal]
+  - name: capacity_mw
+    type: float
+    unit: MW
+    required: true
+    minimum: 0
+  - name: generation_mwh
+    type: float
+    unit: MWh
+    required: true
+    minimum: 0
+mappings:
+  - source: year
+    target: timestamp
+    transform: year_to_iso
+  - source: plant
+    target: plant_name
+  - source: technology
+    target: technology
+  - source: installed_capacity_mw
+    target: capacity_mw
+  - source: annual_generation_gwh
+    target: generation_mwh
+    unit_source: GWh
+    unit_target: MWh

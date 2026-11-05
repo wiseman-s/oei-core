@@ -1,0 +1,19 @@
+site_name: OEI Core
+site_description: Open Energy Intelligence Core
+repo_url: https://github.com/oei-project/oei-core
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Data Model: data-model.md
+  - Provenance: provenance.md
+  - Interoperability: interoperability.md
+  - Pilot: pilot.md
+  - Roadmap: roadmap.md
+
+plugins:
+  - search
+  - mkdocstrings

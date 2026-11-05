@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "OEI Core: Open Energy Intelligence Core"
+message: "If you use OEI Core in research, please cite this repository."
+type: software
+authors:
+  - family-names: Wanyoike
+    given-names: Simon
+    alias: wiseman-s
+    email: alphageek254@gmail.com
+    website: "https://github.com/wiseman-s"
+version: "0.2.0"
+date-released: "2026-11-05"
+license: "Apache-2.0"
+repository-code: "https://github.com/wiseman-s/oei-core"
+url: "https://wiseman-s.github.io/oei-core/"
+abstract: >-
+  OEI Core is an open-source integration and validation engine for energy data.
+  It maps heterogeneous CSV and JSON energy datasets into a shared schema,
+  validates them, records full provenance, and exports harmonised results
+  through a Python library, a CLI, and a REST API.
+keywords:
+  - energy
+  - open-data
+  - interoperability
+  - validation
+  - provenance
+  - reproducibility
+  - digital-public-good
+  - kenya
